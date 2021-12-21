@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Utilities */
+
+.divider {
+  height: 1px;
+  background-color: lightgray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.selected {
+  color: black;
+}
+
+/* Main */
+
+ul#tabs {
+  display: flex;
+  list-style: none;
+  margin: 15px 0 5px 0;
+}
+
+#tabs li {
+  margin-right: 15px;
+  color: darkgray;
+}
+
+#tabs li:hover {
+  cursor: pointer;
+  color: black;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+}
+
+/* MAIN HEADER */
+
+#main-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Header Calories */
+
+div#main-header-calories {
+  color: darkgray;
+  font-size: 25px;
+  margin-right: 40px;
+}
+
+span#main-header-calories-consumed {
+  color: black;
+  font-size: 70px;
+}
+
+#main-header-progress-bar {
+  width: 100%;
+  height: 2px;
+  background-color: lightgray;
+}
+
+#main-header-progress-bar div {
+  width: 45%;
+  background-color: grey;
+  height: 100%;
+}
+
+/* Header Macros */
+
+#main-header-macros-consumed {
+  display: flex;
+  align-items: flex-end;
+}
+
+#main-header-macros-consumed ul {
+  list-style: none;
+  line-height: 25px;
+  margin-right: 40px;
+}
+
+/* Header Weigh-in */
+
+#main-header-weigh-in {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: darkgray;
+  font-size: 20px;
+  margin-right: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+#main-header-weigh-in-count {
+  color: black;
+  font-size: 55px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#main-header-weigh-in-count span {
+  font-size: 35px;
+}
+
+/* Header Miles */
+
+#main-header-miles-ran {
+  display: flex;
+  flex-direction: column;
+  color: darkgray;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+#main-header-miles-count {
+  color: black;
+  font-size: 55px;
+}
+
+#main-header-miles-count span {
+  font-size: 35px;
+}
+
+/* Header Weight */
+
+#main-header-weight-lifted {
+  display: flex;
+  flex-direction: column;
+  color: darkgray;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+#main-header-weight-count {
+  color: black;
+  font-size: 55px;
+}
+
+#main-header-weight-count span {
+  font-size: 35px;
 }
