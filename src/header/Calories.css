@@ -1,0 +1,24 @@
+@import url("../App.css");
+
+div#main-header-calories {
+  color: darkgray;
+  font-size: 25px;
+  margin-right: 40px;
+}
+
+span#main-header-calories-consumed {
+  color: black;
+  font-size: 70px;
+}
+
+#main-header-progress-bar {
+  width: 100%;
+  height: 2px;
+  background-color: lightgray;
+}
+
+#main-header-progress-bar div {
+  width: 45%;
+  background-color: grey;
+  height: 100%;
+}

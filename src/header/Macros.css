@@ -1,0 +1,12 @@
+@import url("../App.css");
+
+#main-header-macros-consumed {
+  display: flex;
+  align-items: flex-end;
+}
+
+#main-header-macros-consumed ul {
+  list-style: none;
+  line-height: 25px;
+  margin-right: 40px;
+}
