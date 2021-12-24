@@ -12,7 +12,25 @@ function App() {
         <Header />
 
         <div className="divider"></div>
+        <div id="buttons">
+          <button>Track</button>
+          <button>Meals</button>
+          <button>Runs</button>
+          <button>Workouts</button>
+        </div>
+        <div id="nutrition-main">
+          <div id="nutrition-main-left">
+            <div id="nutrition-main-left-upper">
 
+            </div>
+            <div id="nutrition-main-left-lower">
+              
+            </div>
+          </div>
+          <div id="nutrition-main-right">
+            
+          </div>
+        </div>
       </div>
     </div>
   );

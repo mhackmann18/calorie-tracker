@@ -9,6 +9,18 @@ body {
   color: #000000;
 }
 
+button {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 /* Utilities */
 
 .divider {
@@ -49,3 +61,17 @@ ul#tabs {
   display: flex;
   margin-bottom: 20px;
 }
+
+/* BUTTONS */
+
+#buttons {
+  display: flex;
+
+}
+
+/* NUTRITION TRACKING MAIN CONTENT */
+
+#nutrition-main {
+  width: 100%;
+}
+
