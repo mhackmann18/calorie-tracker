@@ -1,0 +1,21 @@
+@import url("../../App.css");
+
+#food-tracking-main-search-box {
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  height: 34px;
+}
+
+#food-tracking-main-search-box input {
+  height: 100%;
+  border: none; 
+  border-right: 2px solid lightgray;
+  padding: 0 5px;
+  width: 400px;
+  -webkit-appearance: none;
+}
+
+#food-tracking-main-search-box button {
+  height: 100%;
+  width: 34px;
+}

@@ -1,0 +1,11 @@
+.food-item {
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.food-item i:hover {
+  cursor: pointer;
+}
