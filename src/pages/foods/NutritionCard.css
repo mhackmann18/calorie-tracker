@@ -1,0 +1,9 @@
+#food-tracking-nutrition-table {
+  width: 100%;
+  font-size: 18px;
+}
+
+#food-tracking-nutrition-table th {
+  text-align: left;
+  font-weight: 600;
+}

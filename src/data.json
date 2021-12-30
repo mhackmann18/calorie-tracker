@@ -1,0 +1,33 @@
+{
+  "user": "Hsdsd",
+  "nutrition": [
+    {
+      "date": "2021-12-29T00:00:00.000Z",
+      "meals": [
+        {
+          "name": "Breakfast",
+          "foods": [
+            {
+              "name": "Egg",
+              "servingSize": "1 egg",
+              "quantity": 1,
+              "calories": 70,
+              "fat": 5,
+              "cholesterol": 195,
+              "sodium": 65,
+              "carbohydrates": 1,
+              "protein": 6,
+              "vitaminA": 10,
+              "vitaminC": 0,
+              "calcium": 2,
+              "iron": 6 
+            },
+            {
+              "name": "Bacon"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
