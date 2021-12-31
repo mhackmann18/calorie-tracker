@@ -1,0 +1,27 @@
+#nutrition-card table {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#nutrition-card table th {
+  text-align: left;
+  font-weight: 600;
+}
+
+#nutrition-card table td {
+  width: 33%;
+}
+
+#nutrition-card table tr td:nth-child(n+2),
+#nutrition-card table tr th:nth-child(n+2) {
+  text-align: right;
+}
+
+#nutrition-card button {
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}

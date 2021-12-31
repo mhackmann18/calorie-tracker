@@ -1,5 +1,6 @@
 #food-tracking-page {
   display: flex;
+  margin-bottom: 30px;
 }
 
 #food-tracking-main {
@@ -22,5 +23,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#food-tracking-page-foods-tracked h2 {
+  margin: 15px 0;
+}
+
+#food-tracking-main-add-food-btn {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* CARDS */
+
+#food-tracking-cards {
+  width: 40%;
+  padding: 20px 10px 0 30px;
+}
+
+.side-card {
+  border: 2px solid lightgray;
+  border-radius: 6px;
+  width: 100%;
+  padding: 15px 20px;
   margin-bottom: 20px;
 }

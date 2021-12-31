@@ -12,8 +12,7 @@ function App() {
         </ul>
         <Header />
 
-        {/* <div className="divider"></div> */}
-        <div id="nav-buttons">
+        <div id="buttons">
           <button>Track</button>
           <button>Meals</button>
           <button>Runs</button>
