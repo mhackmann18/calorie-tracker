@@ -8,7 +8,7 @@ function FoodItem(){
         <p>Serving Size: 1 cup | Calories: 150</p>
       </div>
       <div className="food-item-btns">
-        <i class="fas fa-plus btn"></i>
+        <i className="fas fa-plus btn"></i>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import FoodItem from './FoodItem';
 import NutritionCard from './NutritionCard';
 
 function FoodTrackingPage(){
-  // Dummy values for testing
+  // Dummy data for testing NutritionCard component
   const nutrients = [
     { name: "Calories", unit: "", consumed: 1685, goal: 3100 },
     { name: "Fat", unit: "g", consumed: 0, goal: 80 },

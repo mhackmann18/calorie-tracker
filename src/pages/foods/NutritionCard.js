@@ -22,10 +22,6 @@ function NutritionCard(props){
 
     return rows;
   }
-
-  function handleClick(){
-    expanded ? setExpanded(false) : setExpanded(true);
-  }
   
   return (
     <div id="nutrition-card" className="side-card">
@@ -40,7 +36,9 @@ function NutritionCard(props){
           {expanded ? getTableRows(props.nutrients.length) : getTableRows(defaultNumRows)}
         </tbody>
       </table>
-      <button onClick={handleClick}>{expanded ? "Show Less" : "Show All"}</button>
+      <button onClick={() => expanded ? setExpanded(false) : setExpanded(true)}>
+        {expanded ? "Show Less" : "Show All"}
+      </button>
     </div>
   );
 }
