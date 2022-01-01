@@ -3,6 +3,7 @@ import SearchBox from './SearchBox';
 import DateChange from './DateChange';
 import FoodItem from './FoodItem';
 import NutritionCard from './NutritionCard';
+import ProgressCard from './ProgressCard';
 
 function FoodTrackingPage(){
   // Dummy data for testing NutritionCard component
@@ -46,9 +47,7 @@ function FoodTrackingPage(){
       </div>
       <div id="food-tracking-cards">
         <NutritionCard nutrients={nutrients}/>
-        <div className="side-card">
-          <h2>Progress</h2>
-        </div>
+        <ProgressCard />
       </div>
     </div>
   );
