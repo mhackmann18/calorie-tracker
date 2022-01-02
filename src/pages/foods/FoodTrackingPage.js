@@ -4,6 +4,7 @@ import DateChange from './DateChange';
 import FoodItem from './FoodItem';
 import NutritionCard from './NutritionCard';
 import ProgressCard from './ProgressCard';
+import { useState } from 'react';
 
 function FoodTrackingPage(){
   // Dummy data for testing NutritionCard component
@@ -20,12 +21,18 @@ function FoodTrackingPage(){
     { name: "Vitamin C", unit: "mcg", consumed: 0, goal: 0 }
   ];
 
+  const [date, setDate] = useState(new Date());
+
+  function handleDateChange(date){
+    setDate(date);
+  }
+
   return (
     <div id="food-tracking-page">
       <div id="food-tracking-main">
         <div id="food-tracking-main-row-1">
           <h1>Food Tracking</h1>
-          <DateChange />
+          <DateChange date={date} onDateChange={handleDateChange}/>
         </div>
         <div id="food-tracking-main-row-2">
           <SearchBox />
