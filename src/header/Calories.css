@@ -18,7 +18,7 @@ span#main-header-calories-consumed {
 }
 
 #main-header-progress-bar div {
-  width: 45%;
   background-color: grey;
   height: 100%;
+  transition: width .8s ease;
 }

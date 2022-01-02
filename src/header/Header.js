@@ -3,14 +3,22 @@ import Calories from './Calories';
 import Macros from './Macros';
 import HeaderItem from './HeaderItem';
 
-function Header(){
+function Header(props){
+  
+  const { calories, caloriesGoal, fat, carbohydrates, protein } = props.data.nutrition;
+
+  let headerItems = [];
+
+  for(let i = 0; i < props.data.items.length; ++i){
+    const { number, unit, text } = props.data.items[i];
+    headerItems.push(<HeaderItem key={i} number={number} unit={unit} text={text} />)
+  }
+
   return(
     <div id="main-header">
-      <Calories calsConsumed={1685} calGoal={3100} />
-      <Macros fat={0} carbs={0} protein={0}/>
-      <HeaderItem number={165} unit="lbs" text="Today's weight" />
-      <HeaderItem number={3.65} unit="Miles" text="Travelled today" />
-      <HeaderItem number={13465} unit="lbs" text="Lifted today" />
+      <Calories calsConsumed={calories} calGoal={caloriesGoal} />
+      <Macros fat={fat} carbs={carbohydrates} protein={protein}/>
+      {headerItems}
     </div>
   );
 }
