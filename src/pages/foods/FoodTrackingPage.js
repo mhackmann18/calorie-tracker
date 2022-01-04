@@ -26,16 +26,12 @@ function FoodTrackingPage(){
   const [totals] = useState(Totals);
   const [date, setDate] = useState(new Date());
 
-  function handleDateChange(date){
-    setDate(date);
-  }
-
   return (
     <div id="food-tracking-page">
       <div id="food-tracking-main">
         <div id="food-tracking-main-row-1">
           <h1>Food Tracking</h1>
-          <DateChange date={date} onDateChange={handleDateChange} />
+          <DateChange date={date} onDateChange={setDate} />
         </div>
         <div id="food-tracking-main-row-2">
           <SearchBox />
@@ -57,7 +53,7 @@ function FoodTrackingPage(){
       </div>
       <div id="food-tracking-cards">
         <NutritionCard nutrients={nutrients} />
-        <ProgressCard date={date} totals={totals}/>
+        <ProgressCard date={date} totals={totals} />
       </div>
     </div>
   );
