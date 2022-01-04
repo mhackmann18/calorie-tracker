@@ -1,19 +1,27 @@
-import { VictoryBar, VictoryChart } from 'victory';
+// https://formidable.com/open-source/victory/docs/
+import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
 
 function BarChart(props){
-  // https://formidable.com/open-source/victory/docs/
+  
+  const data = [];
 
-  const data = [
-    {date: 1, calories: 1300},
-    {date: 2, calories: 1650},
-    {date: 3, calories: 1425},
-    {date: 4, calories: 1900}
-  ];
+  let dateOptions = { month: "short", day: "numeric" };
+
+  for(let i = (props.numDays - 1); i >= 0; --i){
+    let date = new Date(props.date);
+    date.setDate(date.getDate() - i);
+    data.push({
+      date: date.toLocaleDateString("en-US", dateOptions), 
+      quantity: Math.floor(Math.random() * (3500 - 0 + 1) + 0)
+    });
+  }
 
   return (
     <div>
-      <VictoryChart>
-        <VictoryBar data={data} x="date" y="calories"/>
+      <VictoryChart domainPadding={20}>
+        <VictoryBar data={data} x="date" y="quantity" />
+        <VictoryAxis fixLabelOverlap={true} />
+        <VictoryAxis dependentAxis tickFormat={(x) => (`${x}`)} />
       </VictoryChart>
     </div>
   );

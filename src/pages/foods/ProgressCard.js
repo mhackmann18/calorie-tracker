@@ -1,13 +1,15 @@
-import './ProgressChart.css';
+import './ProgressCard.css';
 import BarChart from './BarChart';
 
-function ProgressChart(props){
+function ProgressCard(props){
+  const days = 7;
+
   return (
     <div className="side-card">
       <h2>Progress</h2>
-      <BarChart />
+      <BarChart date={props.date} numDays={days} />
     </div>
   );
 }
 
-export default ProgressChart;
+export default ProgressCard;

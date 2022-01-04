@@ -5,9 +5,11 @@ import FoodItem from './FoodItem';
 import NutritionCard from './NutritionCard';
 import ProgressCard from './ProgressCard';
 import { useState } from 'react';
+import Totals from '../../totals.json';
 
 function FoodTrackingPage(){
-  // Dummy data for testing NutritionCard component
+  // https://extendsclass.com/json-generator.html
+  // Dates use ISO 8601 format
   const nutrients = [
     { name: "Calories", unit: "", consumed: 1685, goal: 3100 },
     { name: "Fat", unit: "g", consumed: 0, goal: 80 },
@@ -20,7 +22,8 @@ function FoodTrackingPage(){
     { name: "Vitamin A", unit: "mcg", consumed: 10, goal: 0 },
     { name: "Vitamin C", unit: "mcg", consumed: 0, goal: 0 }
   ];
-
+   
+  const [totals] = useState(Totals);
   const [date, setDate] = useState(new Date());
 
   function handleDateChange(date){
@@ -32,7 +35,7 @@ function FoodTrackingPage(){
       <div id="food-tracking-main">
         <div id="food-tracking-main-row-1">
           <h1>Food Tracking</h1>
-          <DateChange date={date} onDateChange={handleDateChange}/>
+          <DateChange date={date} onDateChange={handleDateChange} />
         </div>
         <div id="food-tracking-main-row-2">
           <SearchBox />
@@ -53,8 +56,8 @@ function FoodTrackingPage(){
         </div>
       </div>
       <div id="food-tracking-cards">
-        <NutritionCard nutrients={nutrients}/>
-        <ProgressCard />
+        <NutritionCard nutrients={nutrients} />
+        <ProgressCard date={date} totals={totals}/>
       </div>
     </div>
   );
