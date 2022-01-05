@@ -7,12 +7,16 @@ function BarChart(props){
 
   let dateOptions = { month: "short", day: "numeric" };
 
+  let userData = [...props.data];
+  console.log(userData);
+
   for(let i = (props.numDays - 1); i >= 0; --i){
     let date = new Date(props.date);
     date.setDate(date.getDate() - i);
+
     data.push({
       date: date.toLocaleDateString("en-US", dateOptions), 
-      quantity: Math.floor(Math.random() * (3500 - 0 + 1) + 0)
+      quantity: Math.floor(Math.random() * (3500 + 1))
     });
   }
 

@@ -5,7 +5,7 @@ import FoodItem from './FoodItem';
 import NutritionCard from './NutritionCard';
 import ProgressCard from './ProgressCard';
 import { useState } from 'react';
-import Totals from '../../totals.json';
+import Totals from '../../data/totals.json';
 
 function FoodTrackingPage(){
   // https://extendsclass.com/json-generator.html
