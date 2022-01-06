@@ -1,717 +1,717 @@
 [
   {
     "date": "2021-12-25T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 2310,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 54,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 29,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 1,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 91,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 65,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 136,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 15,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 37,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 47,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2021-12-26T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 2961,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 63,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 85,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 1,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 132,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 103,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 117,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 79,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 0,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 45,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2021-12-27",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 3118,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 33,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 117,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 26,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 57,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 85,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 43,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 116,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 73,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 37,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2021-12-28T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 2540,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 91,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 128,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 36,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 146,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 40,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 117,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 24,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 142,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 45,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2021-12-29T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 2693,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 28,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 131,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 80,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 22,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 77,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 110,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 31,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 32,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 43,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2021-12-30T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 3359,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 41,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 75,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 114,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 20,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 40,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 139,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 131,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 52,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 99,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2021-12-31T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 3830,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 108,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 116,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 81,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 60,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 88,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 0,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 104,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 134,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 55,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2022-01-01T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 2955,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 90,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 109,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 136,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 67,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 134,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 1,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 21,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 30,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 134,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2022-01-02T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 1554,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 92,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 39,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 82,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 97,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 73,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 116,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 118,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 95,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 95,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2022-01-03T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 1908,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 121,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 57,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 135,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 8,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 58,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 130,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 14,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 136,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 135,
         "goal": 0
       }
-    ]
+    }
   },
   {
     "date": "2022-01-04T00:00:00Z",
-    "totals": [
-      {
+    "totals": {
+      "calories": {
         "name": "Calories",
         "unit": "",
         "consumed": 2078,
         "goal": 3300
       },
-      {
+      "fat": {
         "name": "Fat",
         "unit": "g",
         "consumed": 125,
         "goal": 80
       },
-      {
+      "carbohydrates": {
         "name": "Carbs",
         "unit": "g",
         "consumed": 87,
         "goal": 200
       },
-      {
+      "protein": {
         "name": "Protein",
         "unit": "g",
         "consumed": 133,
         "goal": 225
       },
-      {
+      "cholesterol": {
         "name": "Cholesterol",
         "unit": "mg",
         "consumed": 77,
         "goal": 0
       },
-      {
+      "sodium": {
         "name": "Sodium",
         "unit": "mg",
         "consumed": 91,
         "goal": 0
       },
-      {
+      "calcium": {
         "name": "Calcium",
         "unit": "mg",
         "consumed": 49,
         "goal": 0
       },
-      {
+      "iron": {
         "name": "Iron",
         "unit": "mg",
         "consumed": 18,
         "goal": 0
       },
-      {
+      "vitaminA": {
         "name": "Vitamin A",
         "unit": "mcg",
         "consumed": 16,
         "goal": 0
       },
-      {
+      "vitaminC": {
         "name": "Vitamin C",
         "unit": "mcg",
         "consumed": 85,
         "goal": 0
       }
-    ]
+    }
   }
 ]

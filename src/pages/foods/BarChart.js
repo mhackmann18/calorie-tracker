@@ -5,20 +5,42 @@ function BarChart(props){
   
   const data = [];
 
+  console.log(props.macroName);
+
   let dateOptions = { month: "short", day: "numeric" };
 
   let userData = [...props.data];
-  console.log(userData);
 
   for(let i = (props.numDays - 1); i >= 0; --i){
     let date = new Date(props.date);
     date.setDate(date.getDate() - i);
 
-    data.push({
-      date: date.toLocaleDateString("en-US", dateOptions), 
-      quantity: Math.floor(Math.random() * (3500 + 1))
-    });
+    let quantity;
+    let match = false;
+
+    for(let j = 0; j < userData.length; ++j){
+      let dataDateString = (new Date(userData[j].date.replace(/-/g, '/').replace(/T.+/, ''))).toDateString();
+      let chartDateString = (new Date(date)).toDateString();
+      if(dataDateString === chartDateString){
+        quantity = userData[j].totals[props.macroName].consumed;
+        data.push({
+          date: date.toLocaleDateString("en-US", dateOptions), 
+          quantity
+        });
+        console.log(data);
+        match = true;
+      }
+    }
+
+    if(!match){
+      data.push({
+        date: date.toLocaleDateString("en-US", dateOptions), 
+        quantity: 0
+      });
+    }
   }
+
+
 
   return (
     <div>

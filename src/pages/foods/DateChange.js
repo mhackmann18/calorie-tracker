@@ -18,12 +18,12 @@ function DateChange(props){
 
   return (
     <div id="food-tracking-main-change-date">
-      <i className="fas fa-caret-left fa-lg btn" onClick={subtractDay}>&lt;</i>
+      <i className="fas fa-caret-left fa-lg btn" onClick={subtractDay}></i>
       <span>
         {(new Date(props.date)).toDateString() === (new Date()).toDateString() ? "Today, " : ""}
         {(new Date(props.date)).toLocaleDateString("en-US", options)}
       </span>
-      <i className="fas fa-caret-right fa-lg btn" onClick={addDay}>&gt;</i>
+      <i className="fas fa-caret-right fa-lg btn" onClick={addDay}></i>
     </div>
   );
 }
