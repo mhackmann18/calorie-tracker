@@ -1,0 +1,64 @@
+{
+  "totals": {
+    "calories": {
+      "name": "Calories",
+      "unit": "",
+      "consumed": 0,
+      "goal": 0
+    },
+    "fat": {
+      "name": "Fat",
+      "unit": "g",
+      "consumed": 0,
+      "goal": 0
+    },
+    "carbohydrates": {
+      "name": "Carbs",
+      "unit": "g",
+      "consumed": 0,
+      "goal": 0
+    },
+    "protein": {
+      "name": "Protein",
+      "unit": "g",
+      "consumed": 0,
+      "goal": 0
+    },
+    "cholesterol": {
+      "name": "Cholesterol",
+      "unit": "mg",
+      "consumed": 0,
+      "goal": 0
+    },
+    "sodium": {
+      "name": "Sodium",
+      "unit": "mg",
+      "consumed": 0,
+      "goal": 0
+    },
+    "calcium": {
+      "name": "Calcium",
+      "unit": "mg",
+      "consumed": 0,
+      "goal": 0
+    },
+    "iron": {
+      "name": "Iron",
+      "unit": "mg",
+      "consumed": 0,
+      "goal": 0
+    },
+    "vitaminA": {
+      "name": "Vitamin A",
+      "unit": "mcg",
+      "consumed": 0,
+      "goal": 0
+    },
+    "vitaminC": {
+      "name": "Vitamin C",
+      "unit": "mcg",
+      "consumed": 0,
+      "goal": 0
+    }
+  }
+}

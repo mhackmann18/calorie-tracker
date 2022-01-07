@@ -1,0 +1,18 @@
+#progress-card-controls {
+  width: 50%;
+}
+
+#progress-card-controls div {
+  margin-top: 10px;
+  justify-content: space-between;
+  display: flex;
+}
+
+#progress-card-controls div span {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  align-items: center;
+  color: gray;
+}
