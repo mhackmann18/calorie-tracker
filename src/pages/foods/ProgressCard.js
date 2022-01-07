@@ -36,23 +36,27 @@ function ProgressCard(props){
       <div id="progress-card-controls">
         <div>
           Show  
-          <i className="fas fa-caret-left btn" 
-            onClick={() => macroIndex === 0 ? setMacroIndex(macroNames.length-1) : setMacroIndex(macroIndex-1)}
-          ></i>
-          <span>{todaysTotals[macroName].name}</span>
-          <i className="fas fa-caret-right fa-lg btn" 
-            onClick={() => macroIndex === macroNames.length - 1 ? setMacroIndex(0) : setMacroIndex(macroIndex + 1)}
-          ></i>
+          <span>
+            <i className="fas fa-caret-left btn" 
+              onClick={() => macroIndex === 0 ? setMacroIndex(macroNames.length-1) : setMacroIndex(macroIndex-1)}
+            ></i>
+            {todaysTotals[macroName].name}
+            <i className="fas fa-caret-right fa-lg btn" 
+              onClick={() => macroIndex === macroNames.length - 1 ? setMacroIndex(0) : setMacroIndex(macroIndex + 1)}
+            ></i>
+          </span>
         </div>
         <div>
           For the last 
-          <i className="fas fa-caret-left btn" 
-            onClick={() => numDaysIndex === 0 ? setNumDaysIndex(timeScales.length - 1) : setNumDaysIndex(numDaysIndex - 1)}
-          ></i>
-          <span>{timeScales[numDaysIndex].name}</span>
-          <i className="fas fa-caret-right fa-lg btn" 
-            onClick={() => numDaysIndex === timeScales.length - 1 ? setNumDaysIndex(0) : setNumDaysIndex(numDaysIndex + 1)}
-          ></i>
+          <span>
+            <i className="fas fa-caret-left btn" 
+              onClick={() => numDaysIndex === 0 ? setNumDaysIndex(timeScales.length - 1) : setNumDaysIndex(numDaysIndex - 1)}
+            ></i>
+            {timeScales[numDaysIndex].name}
+            <i className="fas fa-caret-right fa-lg btn" 
+              onClick={() => numDaysIndex === timeScales.length - 1 ? setNumDaysIndex(0) : setNumDaysIndex(numDaysIndex + 1)}
+            ></i>
+          </span>
         </div>
       </div>
       <BarChart data={props.totals} date={props.date} numDays={timeScales[numDaysIndex].numDays} macroName={macroName} />

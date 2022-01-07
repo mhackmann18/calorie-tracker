@@ -40,14 +40,12 @@ function BarChart(props){
     }
   }
 
-
-
   return (
     <div>
       <VictoryChart domainPadding={20}>
         <VictoryBar data={data} x="date" y="quantity" />
         <VictoryAxis fixLabelOverlap={true} />
-        <VictoryAxis dependentAxis tickFormat={(x) => (`${x}`)} />
+        <VictoryAxis dependentAxis tickFormat={(x) => (`${x} ${userData[0].totals[props.macroName].unit}`)} />
       </VictoryChart>
     </div>
   );
