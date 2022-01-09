@@ -1,6 +1,7 @@
-import { useState } from 'react';
 import './NutritionCard.css';
-// import EmptyTotals from '../../data/emptyTotals.json';
+import { useState } from 'react';
+import { areDateStringsSameDate } from '../../utils';
+import EmptyTotals from '../../data/emptyTotals.json';
 
 // PROPS - 2
 // data - An array of objects. Each obj has a "date" property whose value is a datestring in ISO 8601 format,
@@ -13,22 +14,34 @@ function NutritionCard(props){
   const [expanded, setExpanded] = useState(false);
   const defaultNumRows = 8;
 
+  console.log(props.date);
+
   function getTableRows(n){
-    let rows = [];
+    let totals = EmptyTotals.totals;
 
-    // for(let dayData of props.data){
+    for(let i = props.data.length - 1; i >= 0; --i){
+      if(areDateStringsSameDate(props.data[i].date, (new Date(props.date)).toDateString())){
+        totals = props.data[i].totals;
+        break;
+      } 
+    }
 
-    // }
+    let i = 0;
+    const rows = [];
+    
+    for(const key in totals){
+      if(i === n)
+        break; 
 
-    for(let i = 0; i < n; ++i){
-      const { name, unit, consumed, goal } = props.data[i];
+      const { name, unit, consumed, goal } = totals[key];
       rows.push(
         <tr key={i}>
           <td>{name}</td>
           <td>{consumed} {unit}</td>
-          <td>{goal ? goal - consumed : 0} {unit}</td>
+          <td>{goal - consumed < 0 ? 0 : goal - consumed} {unit}</td>
         </tr>
       );
+      ++i;
     }
 
     return rows;
