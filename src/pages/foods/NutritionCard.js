@@ -14,8 +14,6 @@ function NutritionCard(props){
   const [expanded, setExpanded] = useState(false);
   const defaultNumRows = 8;
 
-  console.log(props.date);
-
   function getTableRows(n){
     let totals = EmptyTotals.totals;
 
