@@ -1,6 +1,6 @@
 import './NutritionCard.css';
 import { useState } from 'react';
-import { areDateStringsSameDate } from '../../utils';
+import { areDatesSameDay, ISOStringToDate } from '../../utils';
 import EmptyTotals from '../../data/emptyTotals.json';
 
 // PROPS - 2
@@ -14,11 +14,13 @@ function NutritionCard(props){
   const [expanded, setExpanded] = useState(false);
   const defaultNumRows = 8;
 
+  console.log(props.data);
+
   function getTableRows(n){
     let totals = EmptyTotals.totals;
 
     for(let i = props.data.length - 1; i >= 0; --i){
-      if(areDateStringsSameDate(props.data[i].date, (new Date(props.date)).toDateString())){
+      if(areDatesSameDay(ISOStringToDate(props.data[i].date), (new Date(props.date)))){
         totals = props.data[i].totals;
         break;
       } 

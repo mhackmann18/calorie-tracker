@@ -65,18 +65,21 @@ function TrackedFoods(props){
     },
   ];
 
+  let key = 0;
+
   for(const meal of mealData){
     const foodsJSX = [];
 
     for(const food of meal.foods){
-      foodsJSX.push(<FoodItem data={food} />);
+      foodsJSX.push(<FoodItem data={food} key={key} />);
+      ++key;
     }
 
     mealsJSX.push(
-      <>
+      <div key={key}>
         <h2>{meal.name}</h2>
         {foodsJSX}
-      </>
+      </div>
     );
   }
 
