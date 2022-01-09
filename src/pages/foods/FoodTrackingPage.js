@@ -9,7 +9,6 @@ import Totals from '../../data/totals.json';
 
 function FoodTrackingPage(){
   // https://extendsclass.com/json-generator.html
-  // Dates use ISO 8601 format
   const nutrients = [
     { name: "Calories", unit: "", consumed: 1685, goal: 3100 },
     { name: "Fat", unit: "g", consumed: 0, goal: 80 },
@@ -52,7 +51,7 @@ function FoodTrackingPage(){
         </div>
       </div>
       <div id="food-tracking-cards">
-        <NutritionCard nutrients={nutrients} />
+        <NutritionCard data={totals} date={date} nutrients={nutrients} />
         <ProgressCard data={totals} date={date} />
       </div>
     </div>

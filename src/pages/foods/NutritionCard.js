@@ -1,5 +1,12 @@
 import { useState } from 'react';
 import './NutritionCard.css';
+// import EmptyTotals from '../../data/emptyTotals.json';
+
+// PROPS - 2
+// data - An array of objects. Each obj has a "date" property whose value is a datestring in ISO 8601 format,
+//          as well as a "totals" property which is an object containing macroObjects, each having a "name",
+//          "unit", "consumed", and "goal" property
+// date - A date object for the date for which the user's nutritional totals will be shown
 
 function NutritionCard(props){
 
@@ -9,8 +16,12 @@ function NutritionCard(props){
   function getTableRows(n){
     let rows = [];
 
+    // for(let dayData of props.data){
+
+    // }
+
     for(let i = 0; i < n; ++i){
-      const { name, unit, consumed, goal } = props.nutrients[i];
+      const { name, unit, consumed, goal } = props.data[i];
       rows.push(
         <tr key={i}>
           <td>{name}</td>
