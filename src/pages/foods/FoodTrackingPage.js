@@ -53,7 +53,7 @@ function FoodTrackingPage(){
       </div>
       <div id="food-tracking-cards">
         <NutritionCard nutrients={nutrients} />
-        <ProgressCard date={date} totals={totals} />
+        <ProgressCard data={totals} date={date} />
       </div>
     </div>
   );
