@@ -1,7 +1,15 @@
-.food-item {
+.food-item-main {
   border: 1px solid lightgray;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
+}
+
+.food-item-text p {
+  color: gray;
+}
+
+.food-item-btns i {
+  margin-left: 15px;
 }
