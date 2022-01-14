@@ -13,3 +13,28 @@
 .food-item-btns i {
   margin-left: 15px;
 }
+
+.food-item-dropdown {
+  display: flex;
+  border: 1px solid lightgray;
+  border-top: none;
+  border-bottom: none;
+}
+
+.food-item:last-child .food-item-dropdown {
+  border-bottom: 1px solid lightgray;
+}
+
+.food-item-dropdown-nutrition {
+  padding: 14px;
+}
+
+.food-item-dropdown-controls {
+  padding: 14px 28px 14px 14px;
+}
+
+.food-item-dropdown-controls input {
+  padding: 4px;
+  margin-top: 5px;
+  width: 54px;
+}

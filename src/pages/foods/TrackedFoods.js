@@ -16,13 +16,13 @@ function TrackedFoods(props){
           calories: 280
         },
         {
-          name: "Eggs",
+          name: "Egg",
           servingSize: "1 egg",
           quantity: 4,
           calories: 280
         },
         {
-          name: "Hash Brown Patties",
+          name: "Hash Brown Patty",
           servingSize: "1 Patty",
           quantity: 2,
           calories: 240
