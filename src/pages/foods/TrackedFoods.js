@@ -13,19 +13,19 @@ function TrackedFoods(props){
           name: "Bacon",
           servingSize: "1 slice",
           quantity: 4,
-          calories: 280
+          calories: 70
         },
         {
           name: "Egg",
           servingSize: "1 egg",
           quantity: 4,
-          calories: 280
+          calories: 70
         },
         {
           name: "Hash Brown Patty",
           servingSize: "1 Patty",
           quantity: 2,
-          calories: 240
+          calories: 120
         },
       ]
     },
@@ -59,7 +59,7 @@ function TrackedFoods(props){
           name: "Beef Meatballs",
           servingSize: "3 oz",
           quantity: 2,
-          calories: 360
+          calories: 180
         },
       ]
     },
@@ -67,11 +67,19 @@ function TrackedFoods(props){
 
   let key = 0;
 
+  function updateFood(food){
+    console.log(food);
+  }
+
+  function deleteFood(){
+    console.log("Delete food");
+  }
+
   for(const meal of mealData){
     const foodsJSX = [];
 
     for(const food of meal.foods){
-      foodsJSX.push(<FoodItem data={food} key={key} />);
+      foodsJSX.push(<FoodItem data={food} onServingsChange={updateFood} onDelete={deleteFood} key={key} />);
       ++key;
     }
 

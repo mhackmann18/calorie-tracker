@@ -16,9 +16,10 @@
 
 .food-item-dropdown {
   display: flex;
-  border: 1px solid lightgray;
-  border-top: none;
-  border-bottom: none;
+  overflow: scroll;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  transition: max-height .5s ease;
 }
 
 .food-item:last-child .food-item-dropdown {
@@ -26,11 +27,17 @@
 }
 
 .food-item-dropdown-nutrition {
+  width: 85%;
   padding: 14px;
 }
 
 .food-item-dropdown-controls {
-  padding: 14px 28px 14px 14px;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 14px 28px 14px 0px;
+  margin-top: 15px;
 }
 
 .food-item-dropdown-controls input {
