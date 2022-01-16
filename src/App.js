@@ -38,7 +38,7 @@ function App() {
       <div id="container">
         <Header data={headerData}/>
 
-        <div id="buttons">
+        <div id="nav-buttons">
           <button onClick={handleClick}>Track</button>
           <button>Meals</button>
           <button>Runs</button>

@@ -2,6 +2,7 @@
   width: 35%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #food-tracking-main-change-date span {

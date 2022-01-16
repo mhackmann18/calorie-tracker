@@ -1,5 +1,6 @@
 .food-item-main {
   border: 1px solid lightgray;
+  border-bottom: none;
   display: flex;
   align-items: center;
   justify-content: space-between;

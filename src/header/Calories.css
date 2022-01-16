@@ -4,6 +4,7 @@ div#main-header-calories {
   color: darkgray;
   font-size: 25px;
   margin-right: 40px;
+  width: 28%;
 }
 
 span#main-header-calories-consumed {
