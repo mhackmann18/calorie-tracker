@@ -14,8 +14,6 @@ function NutritionCard(props){
   const [expanded, setExpanded] = useState(false);
   const defaultNumRows = 8;
 
-  console.log(props.data);
-
   function getTableRows(n){
     let totals = EmptyTotals.totals;
 
@@ -57,7 +55,7 @@ function NutritionCard(props){
             <th>Total</th>
             <th>Until goal</th>
           </tr>
-          {expanded ? getTableRows(props.nutrients.length) : getTableRows(defaultNumRows)}
+          {expanded ? getTableRows(props.data[0].totals.length) : getTableRows(defaultNumRows)}
         </tbody>
       </table>
       <button onClick={() => expanded ? setExpanded(false) : setExpanded(true)}>
