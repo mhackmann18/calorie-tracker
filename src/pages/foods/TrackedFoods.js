@@ -3,66 +3,51 @@ import FoodItem from './FoodItem';
 
 function TrackedFoods(props){
 
-  const mealsJSX = [];
+  const foodsJSX = [];
 
-  const mealData = [
+  const foods = [
     {
-      name: "Breakfast",
-      foods: [
-        {
-          name: "Bacon",
-          servingSize: "1 slice",
-          quantity: 4,
-          calories: 70
-        },
-        {
-          name: "Egg",
-          servingSize: "1 egg",
-          quantity: 4,
-          calories: 70
-        },
-        {
-          name: "Hash Brown Patty",
-          servingSize: "1 Patty",
-          quantity: 2,
-          calories: 120
-        },
-      ]
+      name: "Bacon",
+      servingSize: "1 slice",
+      quantity: 4,
+      calories: 70
     },
     {
-      name: "Lunch",
-      foods: [
-        {
-          name: "Whole Wheat Bread",
-          servingSize: "2 Slices",
-          quantity: 1,
-          calories: 120
-        },
-        {
-          name: "Peanut Butter",
-          servingSize: "2 Tablespoons",
-          quantity: 1,
-          calories: 180
-        },
-      ]
+      name: "Egg",
+      servingSize: "1 egg",
+      quantity: 4,
+      calories: 70
     },
     {
-      name: "Dinner",
-      foods: [
-        {
-          name: "White Spaghetti",
-          servingSize: "3 oz",
-          quantity: 1,
-          calories: 140
-        },
-        {
-          name: "Beef Meatballs",
-          servingSize: "3 oz",
-          quantity: 2,
-          calories: 180
-        },
-      ]
+      name: "Hash Brown Patty",
+      servingSize: "1 Patty",
+      quantity: 2,
+      calories: 120
     },
+    {
+      name: "Whole Wheat Bread",
+      servingSize: "2 Slices",
+      quantity: 1,
+      calories: 120
+    },
+    {
+      name: "Peanut Butter",
+      servingSize: "2 Tablespoons",
+      quantity: 1,
+      calories: 180
+    },
+    {
+      name: "White Spaghetti",
+      servingSize: "3 oz",
+      quantity: 1,
+      calories: 140
+    },
+    {
+      name: "Beef Meatballs",
+      servingSize: "3 oz",
+      quantity: 2,
+      calories: 180
+    }
   ];
 
   let key = 0;
@@ -75,25 +60,14 @@ function TrackedFoods(props){
     console.log("Delete food");
   }
 
-  for(const meal of mealData){
-    const foodsJSX = [];
-
-    for(const food of meal.foods){
-      foodsJSX.push(<FoodItem data={food} onServingsChange={updateFood} onDelete={deleteFood} key={key} />);
-      ++key;
-    }
-
-    mealsJSX.push(
-      <div key={key}>
-        <h2>{meal.name}</h2>
-        {foodsJSX}
-      </div>
-    );
+  for(const food of foods){
+    foodsJSX.push(<FoodItem data={food} onServingsChange={updateFood} onDelete={deleteFood} key={key} />);
+    ++key;
   }
 
   return (
     <div id="food-tracking-page-foods-tracked">
-      {mealsJSX}
+      {foodsJSX}
     </div>
   );
 }
